@@ -7,7 +7,7 @@ Has a label with a question that acts and another label underneath with an answe
 
 ### App Walk-though
 
-<img src=http://g.recordit.co/6HdjAz2ja1.gif width=200><br>
+<img src=http://g.recordit.co/ROUhk2hubB.gif width=200><br>
 
 ## Required
 - [x] Create New Project in Xcode
