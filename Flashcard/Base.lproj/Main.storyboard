@@ -16,31 +16,75 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cW0-pS-Ht9">
-                                <rect key="frame" x="87" y="187" width="240" height="128"/>
+                                <rect key="frame" x="74" y="179" width="278" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kaiping, China" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-lg-O5u">
-                                        <rect key="frame" x="-16" y="-49" width="272" height="226"/>
+                                        <rect key="frame" x="-20" y="-15" width="318" height="222"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <color key="textColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where was Shuxin born?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-Un-Nbo">
-                                        <rect key="frame" x="-19" y="-49" width="277" height="226"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where was Shuxin born?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-Un-Nbo">
+                                        <rect key="frame" x="-20" y="-17" width="318" height="225"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4w6-Zc-hEK">
+                                <rect key="frame" x="87" y="506" width="241" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="San Francisco, CA">
+                                    <color key="titleColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnF-71-1SH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75p-VU-ZJn">
+                                <rect key="frame" x="87" y="577" width="241" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Los Angeles, CA">
+                                    <color key="titleColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ox6-bH-PJb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSF-fh-O3M">
+                                <rect key="frame" x="87" y="648" width="241" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Kaiping, China">
+                                    <color key="titleColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGf-mD-zZc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSS-zn-ko4">
+                                <rect key="frame" x="87" y="719" width="241" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Hong Kong">
+                                    <color key="titleColor" red="1" green="0.69613457889999997" blue="0.94157297959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8g7-A8-0af"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -50,7 +94,12 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="Button1" destination="4w6-Zc-hEK" id="0Rh-yJ-822"/>
+                        <outlet property="Button2" destination="75p-VU-ZJn" id="yZE-EV-vbE"/>
+                        <outlet property="Button3" destination="DSF-fh-O3M" id="Y7j-r9-CZQ"/>
+                        <outlet property="Button4" destination="KSS-zn-ko4" id="sEy-aq-6Hd"/>
                         <outlet property="backLabel" destination="ciH-lg-O5u" id="jaa-6u-RhT"/>
+                        <outlet property="card" destination="cW0-pS-Ht9" id="s1N-hF-rHw"/>
                         <outlet property="frontLabel" destination="CIU-Un-Nbo" id="5c1-KB-iZw"/>
                     </connections>
                 </viewController>
