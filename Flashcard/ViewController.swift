@@ -18,9 +18,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
-    @IBAction func didTapOnFlash(_ sender: Any) {
+    @IBAction func didTapButton(_ sender: Any) {
         frontLabel.isHidden = true
     }
+    
 }
 
