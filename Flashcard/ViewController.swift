@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         Button2.clipsToBounds = true
         Button3.clipsToBounds = true
         Button4.clipsToBounds = true
+        //creating the border colors
         Button1.layer.borderColor = #colorLiteral(red: 1, green: 0.679359138, blue: 0.9562004209, alpha: 1)
         Button1.layer.borderWidth = 3.0
         Button2.layer.borderColor = #colorLiteral(red: 1, green: 0.679359138, blue: 0.9562004209, alpha: 1)
