@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         Button4.layer.borderColor = #colorLiteral(red: 1, green: 0.679359138, blue: 0.9562004209, alpha: 1)
         Button4.layer.borderWidth = 3.0
     }
-
+    //didTapFlashcard
     @IBAction func didTapButton(_ sender: Any) {
         if frontLabel.isHidden == false {
             frontLabel.isHidden = true
@@ -58,24 +58,47 @@ class ViewController: UIViewController {
             frontLabel.isHidden = false
         }
     }
+    //void return, so took out the -> return type
+    func updateFlashcard(question: String, answer: String, answer1: String?, answer2: String?, answer4: String?){
+        frontLabel.text = question
+        backLabel.text = answer
+
+        Button1.setTitle(answer1, for: .normal)
+        Button2.setTitle(answer2, for: .normal)
+        Button3.setTitle(answer, for: .normal)
+        Button4.setTitle(answer4, for: .normal)
+    }
     
+    //First option
     @IBAction func didTapButton1(_ sender: Any) {
         frontLabel.isHidden = false
     }
     
+    //Second option
     @IBAction func didTapButton2(_ sender: Any) {
         frontLabel.isHidden = false
     }
     
+    //Third option
     @IBAction func didTapButton3(_ sender: Any) {
         frontLabel.isHidden = true
     }
     
+    //Fourth option
     @IBAction func didTapButton4(_ sender: Any) {
         frontLabel.isHidden = false
     }
     
     @IBOutlet weak var card: UIView!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let navigationController = segue.destination as! UINavigationController
+        let creationController = navigationController.topViewController as! CreationViewController
+        creationController.flashcardsController = self
+        if segue.identifier == "EditSegue" { creationController.initialQuestion = frontLabel.text
+        creationController.initialAnswer = backLabel.text
+        }
+    }
     
 }
 
