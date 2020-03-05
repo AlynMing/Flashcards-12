@@ -1,7 +1,7 @@
 ## Lab 2
 
 ### App Description
-The user can edit their flashcard question, answer, and multiple choice answers with the pencil button in the flashcard bottom left corner. They can open the creation/edit screen by pressing on the + button on the bottom of the screen.   
+The user can edit their flashcard question, answer, and multiple choice answers with the pencil button in the flashcard bottom left corner. They can open the creation/edit screen by pressing on the + button on the bottom of the screen as well.
 
 ### App Walk-though
 
