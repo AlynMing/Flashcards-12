@@ -44,7 +44,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="✏️"/>
                                         <connections>
-                                            <segue destination="hFh-GR-v5T" kind="show" id="p4K-dj-4o5"/>
+                                            <segue destination="hFh-GR-v5T" kind="show" identifier="EditSegue" id="p4K-dj-4o5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -103,6 +103,35 @@
                                     <segue destination="hFh-GR-v5T" kind="presentation" id="V1s-9D-T65"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOI-8i-KnG">
+                                <rect key="frame" x="350" y="1024" width="32" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6d-5m-h0X">
+                                <rect key="frame" x="48" y="832" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMq-Qf-qBv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zt6-eA-t27">
+                                <rect key="frame" x="320" y="832" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLw-Ag-eZK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aev-IK-OuE">
+                                <rect key="frame" x="60" y="169" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="❌"/>
+                                <connections>
+                                    <action selector="didTapOnDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfP-FD-GNN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -116,6 +145,8 @@
                         <outlet property="Button2" destination="75p-VU-ZJn" id="yZE-EV-vbE"/>
                         <outlet property="Button3" destination="DSF-fh-O3M" id="Y7j-r9-CZQ"/>
                         <outlet property="Button4" destination="KSS-zn-ko4" id="sEy-aq-6Hd"/>
+                        <outlet property="Next" destination="Zt6-eA-t27" id="ZDG-45-cbS"/>
+                        <outlet property="Prev" destination="G6d-5m-h0X" id="bSt-qT-YZu"/>
                         <outlet property="backLabel" destination="ciH-lg-O5u" id="jaa-6u-RhT"/>
                         <outlet property="card" destination="cW0-pS-Ht9" id="s1N-hF-rHw"/>
                         <outlet property="frontLabel" destination="CIU-Un-Nbo" id="5c1-KB-iZw"/>
