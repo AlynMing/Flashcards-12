@@ -41,7 +41,6 @@ class CreationViewController: UIViewController {
         let answerText = answer.text
         let answer1Text = answer1.text
         let answer2Text = answer2.text
-        
         let answer4Text = answer4.text
         
         if (questionText == nil || answerText == nil || questionText!.isEmpty || answerText!.isEmpty) {
@@ -58,7 +57,7 @@ class CreationViewController: UIViewController {
             }
             //calling the update flashcards function to update
             flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, answer1: answer1Text!, answer2: answer2Text!, answer4: answer4Text!, isExisting: isExisting)
-            dismiss(animated: true)
+                dismiss(animated: true)
         }
     }
     /*

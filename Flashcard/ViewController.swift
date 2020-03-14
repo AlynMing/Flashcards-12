@@ -199,7 +199,6 @@ class ViewController: UIViewController {
         if currentIndex > flashcards.count - 1 {
             currentIndex = flashcards.count - 1
         }
-        
         updateNextPrevButtons()
         updateLabels()
         saveAllFlashcardsToDisk()
@@ -208,16 +207,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var card: UIView!
     
     func saveAllFlashcardsToDisk() {
-        let dictionaryArray = flashcards.map { (card) -> [String: String] in return ["question": card.question, "answer": card.answer]
+        let dictionaryArray = flashcards.map { (card) -> [String: String?] in return ["question": card.question, "answer": card.answer, "answer1": card.answer1, "answer2": card.answer2, "answer4": card.answer4]
         }
         UserDefaults.standard.set(dictionaryArray, forKey: "flashcards")
         print("Flashcards saved to UserDefaults")
-        
     }
     func readSavedFlashcards() {
         if let dictionaryArray = UserDefaults.standard.array(forKey: "flashcards") as? [[String: String]] {
             let savedCards = dictionaryArray.map {
-                dictionary -> Flashcard in return Flashcard(question: dictionary["question"]!, answer: dictionary["answer"]!)
+                dictionary -> Flashcard in return Flashcard(question: dictionary["question"]!, answer: dictionary["answer"]!, answer1: dictionary["answer1"]!, answer2: dictionary["answer2"]!, answer4: dictionary["answer4"]!)
             }
             flashcards.append(contentsOf: savedCards)
         }
