@@ -1,3 +1,24 @@
+## Lab 4
+
+### App Description
+The user now sees an app icon for this app on the home screen and splash screen. When initially opening the app, the flashcard and multiple choice buttons animate to pop out a bit. Animations have also been added for when you click on the flashcard, move to the next card, and move to the previous card. 
+
+### App Walk-though
+
+<img src="http://g.recordit.co/37hxFLILfF.gif" width=200><br>
+
+## Required
+- [x] User should see the app icon 
+- [x] User should see a splash screen
+- [x] User should see an flip animation when revealing the answer
+- [x] User should see a slide animation when going to the next flashcard
+- [x] User should see a slide animation when going to the previous flashcard
+- [x] Push code to GitHub
+## Optional
+- [x] User should see a nicer flaschard with rounded corners, shadows, and animating when showing the first time
+- [ ] User should see all views properly layout when using the app on a phone of different sizes
+- [x] Correct answer in multiple choice should be random
+
 ## Lab 3
 
 ### App Description

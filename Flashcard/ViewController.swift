@@ -155,7 +155,6 @@ class ViewController: UIViewController {
     
     func animateCardIn(){
         //start on the right side (don't animate this)
-        
         card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
         
         UIView.animate(withDuration: 0.3, animations: {self.card.transform = CGAffineTransform.identity})
@@ -173,7 +172,6 @@ class ViewController: UIViewController {
     
     func animateCardIn2(){
         //start on the right side (don't animate this)
-        
         card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
         
         UIView.animate(withDuration: 0.3, animations: {self.card.transform = CGAffineTransform.identity})
@@ -233,7 +231,6 @@ class ViewController: UIViewController {
         //update buttons
         let buttons = [Button1,Button2,Button3,Button4].shuffled()
         let answers = [currentFlashcard.answer, currentFlashcard.answer1,currentFlashcard.answer2,currentFlashcard.answer4].shuffled()
-        
         
         for (button,answer) in zip(buttons,answers) {
             //Set title of this random button with random answer
